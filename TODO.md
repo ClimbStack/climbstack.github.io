@@ -26,7 +26,7 @@
 
 - [ ] **AT Protocol DID (`atproto-did`)** — Skipped for now.
 - [x] **`rel="me"` links** — Included for verified social profiles in footer.
-- [ ] **Google Search Console** — Add site and verify ownership via `<meta>` tag or DNS TXT record once custom domain is active.
+- [x] **Google Search Console** — Ownership verification meta tag added to `index.html`.
 
 ## 4. Security
 
