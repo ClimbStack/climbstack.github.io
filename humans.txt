@@ -1,0 +1,11 @@
+/* TEAM */
+Founder & Lead Developer: Giovanni Zanotti
+GitHub: https://github.com/GiZano
+Location: Italy
+
+/* SITE */
+Software: ClimbStack Landing Page & Privacy Policy
+Standards: HTML5, CSS3, ES6
+Components: Bootstrap 5, Font Awesome 6
+Hosting: GitHub Pages
+URL: https://climbstack.github.io

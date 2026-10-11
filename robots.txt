@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://climbstack.github.io/sitemap.xml

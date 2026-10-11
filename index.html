@@ -6,6 +6,38 @@
   <title>ClimbStack - Gamify your goals.</title>
   
   <meta name="description" content="A local-first productivity engine that maps your goals as mountains and blocks your time.">
+  <meta name="theme-color" content="#0D1117">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://climbstack.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://climbstack.github.io/">
+  <meta property="og:title" content="ClimbStack - Gamify your goals.">
+  <meta property="og:description" content="A local-first productivity engine that maps your goals as mountains and blocks your time.">
+  <meta property="og:image" content="https://climbstack.github.io/assets/feature.png">
+  <meta property="og:site_name" content="ClimbStack">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="it_IT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://climbstack.github.io/">
+  <meta name="twitter:title" content="ClimbStack - Gamify your goals.">
+  <meta name="twitter:description" content="A local-first productivity engine that maps your goals as mountains and blocks your time.">
+  <meta name="twitter:image" content="https://climbstack.github.io/assets/feature.png">
+
+  <!-- Preconnect to external CDNs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Favicons & App Manifest -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/globals.css">
@@ -14,8 +46,36 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-  
-  <link rel="icon" type="image/png" href="assets/icon.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://climbstack.github.io/#website",
+        "url": "https://climbstack.github.io/",
+        "name": "ClimbStack",
+        "description": "Gamify your goals. Conquer your peaks."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://climbstack.github.io/#app",
+        "name": "ClimbStack",
+        "operatingSystem": "Android, iOS",
+        "applicationCategory": "ProductivityApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "A local-first productivity engine that maps your goals as mountains and blocks your time.",
+        "url": "https://climbstack.github.io/"
+      }
+    ]
+  }
+  </script>
   
   <!-- Scripts -->
   <script src="js/i18n/climbstack.js" defer></script>
@@ -23,10 +83,13 @@
 </head>
 <body class="climbstack-page">
 
+  <!-- Skip to main content for keyboard & screen reader accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(13, 17, 23, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--lu-border);">
     <div class="container" style="max-width: 1400px;">
       <a class="navbar-brand fw-bold" style="display: flex; align-items: center; gap: 0.75rem;" href="#" aria-label="ClimbStack Home">
-        <img src="assets/icon.png" alt="ClimbStack Icon" style="width: 32px; height: 32px; border-radius: 6px;">
+        <img src="assets/icon.png" alt="ClimbStack Icon" width="32" height="32" style="border-radius: 6px;">
         <span data-i18n="nav_home" data-i18n-raw>ClimbStack</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luNavbar" aria-controls="luNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,89 +112,94 @@
     </div>
   </nav>
 
-  <header class="lu-hero">
-    <div class="lu-hero-content">
-      <h1 data-i18n="hero_h1">Gamify your goals.<br>Conquer your peaks.</h1>
-      <p class="lu-hero-sub" data-i18n="hero_sub">A local-first productivity engine that maps your goals as mountains and blocks your time.</p>
+  <main id="main-content">
+    <header class="lu-hero">
+      <div class="lu-hero-content">
+        <h1 data-i18n="hero_h1">Gamify your goals.<br>Conquer your peaks.</h1>
+        <p class="lu-hero-sub" data-i18n="hero_sub">A local-first productivity engine that maps your goals as mountains and blocks your time.</p>
+        
+        <div class="lu-btn-group">
+          <a href="#" class="lu-btn lu-btn-primary" aria-label="Download on Google Play (WIP)" style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
+            <i class="fab fa-google-play"></i> <span data-i18n="btn_play" data-i18n-raw>Get it on Google Play (WIP)</span>
+          </a>
+          <a href="https://github.com/ClimbStack/climbstack-app" target="_blank" rel="noopener noreferrer" class="lu-btn lu-btn-secondary" aria-label="Source on GitHub">
+            <i class="fab fa-github"></i> <span data-i18n="btn_source" data-i18n-raw>Source Code</span>
+          </a>
+        </div>
+      </div>
+      <div class="lu-hero-visual">
+        <picture>
+          <source srcset="assets/feature.webp" type="image/webp">
+          <img src="assets/feature.png" alt="ClimbStack App Interface Screenshot showing peaks and time blocks" width="1024" height="500" decoding="async">
+        </picture>
+      </div>
+    </header>
+
+    <section id="features" class="lu-features">
+      <div class="container text-center mb-5">
+        <span class="qg-eyebrow" data-i18n="feat_eyebrow" style="color: var(--lu-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; font-weight: 600;">Core Mechanics</span>
+        <h2 class="qg-title mb-4" data-i18n="feat_title" style="font-size: 2.5rem;">Features &amp; Blocks</h2>
+      </div>
+
+      <div class="lu-features-grid">
+        <div class="lu-feature-card">
+          <div class="lu-feature-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3 data-i18n="feat_peaks_ttl">Peaks &amp; Camps</h3>
+          <p data-i18n="feat_peaks_desc">Define your long-term goals as mountains and break them down into base camps. Watch the SVG mountain fill up as you progress.</p>
+        </div>
+        
+        <div class="lu-feature-card">
+          <div class="lu-feature-icon">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <h3 data-i18n="feat_planner_ttl">Weekly Planner</h3>
+          <p data-i18n="feat_planner_desc">Organize your week intuitively. Copy previous weeks, schedule predefined templates, or create one-off blocks. Track your progress per category.</p>
+        </div>
+
+        <div class="lu-feature-card">
+          <div class="lu-feature-icon">
+            <i class="fas fa-sun"></i>
+          </div>
+          <h3 data-i18n="feat_today_ttl">Today's Focus</h3>
+          <p data-i18n="feat_today_desc">Focus only on today's tasks. Tick off blocks and see the hours automatically contribute to your mountain peaks.</p>
+        </div>
+
+        <div class="lu-feature-card">
+          <div class="lu-feature-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 data-i18n="feat_blocks_ttl">Blocks &amp; Categories</h3>
+          <p data-i18n="feat_blocks_desc">Create custom categories with custom colors and icons. Manage block templates and archive them without losing historical data.</p>
+        </div>
+
+        <div class="lu-feature-card">
+          <div class="lu-feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 data-i18n="feat_local_ttl">Local-First &amp; Settings</h3>
+          <p data-i18n="feat_local_desc">Light and Dark mode support. 100% offline, zero trackers. Export your entire database as JSON for complete control over your data.</p>
+        </div>
+      </div>
       
-      <div class="lu-btn-group">
-        <a href="#" class="lu-btn lu-btn-primary" aria-label="Download on Google Play (WIP)" style="opacity: 0.6; cursor: not-allowed; pointer-events: none;">
-          <i class="fab fa-google-play"></i> <span data-i18n="btn_play" data-i18n-raw>Get it on Google Play (WIP)</span>
+    </section>
+
+    <section id="open-source" class="lu-os">
+      <div class="lu-os-content text-center">
+        <i class="fab fa-osi fa-3x mb-4" style="color: #4CAF50;"></i>
+        <h2 data-i18n="os_title">From Developers for Everyone</h2>
+        <p data-i18n="os_desc" class="lu-os-sub mx-auto">ClimbStack is 100% open-source and community-driven. We believe in transparency and collaborative tools. Jump in, explore the codebase, and help us conquer the next peak together.</p>
+        <a href="https://github.com/ClimbStack/climbstack-app/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener noreferrer" class="lu-btn lu-btn-secondary">
+          <i class="fab fa-github"></i> <span data-i18n="os_cta" data-i18n-raw>Solve a Good First Issue</span>
         </a>
-        <a href="https://github.com/ClimbStack/climbstack-app" target="_blank" rel="noopener noreferrer" class="lu-btn lu-btn-secondary" aria-label="Source on GitHub">
-          <i class="fab fa-github"></i> <span data-i18n="btn_source" data-i18n-raw>Source Code</span>
-        </a>
-      </div>
-    </div>
-    <div class="lu-hero-visual">
-      <img src="assets/feature.png" alt="ClimbStack App Interface Screenshot showing peaks and time blocks">
-    </div>
-  </header>
-
-  <section id="features" class="lu-features">
-    <div class="container text-center mb-5">
-      <span class="qg-eyebrow" data-i18n="feat_eyebrow" style="color: var(--lu-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; font-weight: 600;">Core Mechanics</span>
-      <h2 class="qg-title mb-4" data-i18n="feat_title" style="font-size: 2.5rem;">Features &amp; Blocks</h2>
-    </div>
-
-    <div class="lu-features-grid">
-      <div class="lu-feature-card">
-        <div class="lu-feature-icon">
-          <i class="fas fa-mountain"></i>
+        
+        <div style="margin-top: 4rem;">
+          <a href="./privacy.html" style="color: var(--lu-text-sec); text-decoration: underline; font-size: 0.9rem;" aria-label="Read Privacy Policy" data-i18n="footer_privacy" data-i18n-raw>Privacy Policy</a>
         </div>
-        <h3 data-i18n="feat_peaks_ttl">Peaks &amp; Camps</h3>
-        <p data-i18n="feat_peaks_desc">Define your long-term goals as mountains and break them down into base camps. Watch the SVG mountain fill up as you progress.</p>
       </div>
-      
-      <div class="lu-feature-card">
-        <div class="lu-feature-icon">
-          <i class="far fa-calendar-alt"></i>
-        </div>
-        <h3 data-i18n="feat_planner_ttl">Weekly Planner</h3>
-        <p data-i18n="feat_planner_desc">Organize your week intuitively. Copy previous weeks, schedule predefined templates, or create one-off blocks. Track your progress per category.</p>
-      </div>
-
-      <div class="lu-feature-card">
-        <div class="lu-feature-icon">
-          <i class="fas fa-sun"></i>
-        </div>
-        <h3 data-i18n="feat_today_ttl">Today's Focus</h3>
-        <p data-i18n="feat_today_desc">Focus only on today's tasks. Tick off blocks and see the hours automatically contribute to your mountain peaks.</p>
-      </div>
-
-      <div class="lu-feature-card">
-        <div class="lu-feature-icon">
-          <i class="fas fa-cubes"></i>
-        </div>
-        <h3 data-i18n="feat_blocks_ttl">Blocks &amp; Categories</h3>
-        <p data-i18n="feat_blocks_desc">Create custom categories with custom colors and icons. Manage block templates and archive them without losing historical data.</p>
-      </div>
-
-      <div class="lu-feature-card">
-        <div class="lu-feature-icon">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <h3 data-i18n="feat_local_ttl">Local-First &amp; Settings</h3>
-        <p data-i18n="feat_local_desc">Light and Dark mode support. 100% offline, zero trackers. Export your entire database as JSON for complete control over your data.</p>
-      </div>
-    </div>
-    
-  </section>
-
-  <section id="open-source" class="lu-os">
-    <div class="lu-os-content text-center">
-      <i class="fab fa-osi fa-3x mb-4" style="color: #4CAF50;"></i>
-      <h2 data-i18n="os_title">From Developers for Everyone</h2>
-      <p data-i18n="os_desc" class="lu-os-sub mx-auto">ClimbStack is 100% open-source and community-driven. We believe in transparency and collaborative tools. Jump in, explore the codebase, and help us conquer the next peak together.</p>
-      <a href="https://github.com/ClimbStack/climbstack-app/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener noreferrer" class="lu-btn lu-btn-secondary">
-        <i class="fab fa-github"></i> <span data-i18n="os_cta" data-i18n-raw>Solve a Good First Issue</span>
-      </a>
-      
-      <div style="margin-top: 4rem;">
-        <a href="./privacy.html" style="color: var(--lu-text-sec); text-decoration: underline; font-size: 0.9rem;" aria-label="Read Privacy Policy" data-i18n="footer_privacy" data-i18n-raw>Privacy Policy</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- i18n Toggle Button Bottom Right -->
   <button type="button" id="i18n-toggle" class="btn btn-sm btn-outline-primary rounded-pill fw-semibold position-fixed bottom-0 end-0 m-4 shadow" style="z-index: 1050; background-color: var(--lu-bg-surface); color: var(--lu-primary); border-color: var(--lu-primary);" data-i18n-toggle>EN</button>
