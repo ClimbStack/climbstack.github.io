@@ -6,11 +6,17 @@
 
     var currentYear = new Date().getFullYear();
 
-    /* ── social links ─────────────────────────────────────── */
+    /* ── social links (single source of truth) ─────────────── */
     var socials = [
-        { id: 'GITHUB',   href: 'https://github.com/ClimbStack',           icon: 'fa-github',   label: 'ClimbStack GitHub Organization' },
+        { id: 'ORCID',    href: 'https://orcid.org/0009-0000-8900-9586',            icon: 'fa-orcid',    label: 'ORCID Researcher Profile', rel: 'me noopener noreferrer' },
+        { id: 'LINKEDIN', href: 'https://www.linkedin.com/in/giovanni-zanotti-it/',  icon: 'fa-linkedin', label: 'LinkedIn Profile' },
+        { id: 'GITHUB',   href: 'https://github.com/GiZano',                        icon: 'fa-github',   label: 'GitHub Profile' },
+        { id: 'HASHNODE', href: 'https://gizano.hashnode.dev/',                      icon: 'fa-hashnode', label: 'Hashnode Blog' },
+        { id: 'YOUTUBE',  href: 'https://www.youtube.com/@GZanotti',                 icon: 'fa-youtube',  label: 'YouTube Channel' },
+        { id: 'MASTODON', href: 'https://hachyderm.io/@gizano',                      icon: 'fa-mastodon', label: 'Mastodon Profile', rel: 'me noopener noreferrer' }
     ];
 
+    /* ── build social icons markup ─────────────────────────── */
     function socialLinksHTML() {
         var html = '';
         for (var i = 0; i < socials.length; i++) {
@@ -29,16 +35,16 @@
         '<footer class="py-5 bg-dark text-white">' +
             '<div class="container">' +
                 '<div class="row align-items-center">' +
-                    /* Column 1 — Brand & tagline */
+                    /* Column 1 — Brand & role */
                     '<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">' +
-                        '<p class="h5 mb-3 fw-bold">ClimbStack</p>' +
-                        '<p class="text-white-50 small mb-0" data-i18n="footer_tagline">A local-first productivity engine that maps your goals as mountains and blocks your time.</p>' +
+                        '<p class="h5 mb-1 fw-bold">Giovanni Zanotti</p>' +
+                        '<p class="text-white-50 small mb-0">Founder & Lead Developer</p>' +
                     '</div>' +
-                    /* Column 2 — GitHub CTA */
+                    /* Column 2 — Email CTA */
                     '<div class="col-md-4 text-center mb-4 mb-md-0">' +
-                        '<p class="mb-3 small text-uppercase fw-bold ls-1" data-i18n="footer_ttl">Get involved</p>' +
-                        '<a href="https://github.com/ClimbStack/climbstack-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm px-4">' +
-                            '<i class="fab fa-github me-2"></i>Source Code' +
+                        '<p class="mb-3 small text-uppercase fw-bold ls-1" data-i18n="footer_ttl">Get in touch</p>' +
+                        '<a href="mailto:gizano&#46;dev&#64;gmail&#46;com" class="btn btn-outline-light btn-sm px-4" data-i18n="footer_email">' +
+                            '<i class="fas fa-envelope me-2"></i>Email Me' +
                         '</a>' +
                     '</div>' +
                     /* Column 3 — Social icons */
