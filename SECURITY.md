@@ -6,7 +6,7 @@ We take the security of ClimbStack and its infrastructure seriously. If you disc
 
 ### Contact
 
-- **Email**: [gizano.dev@gmail.com](mailto:gizano.dev@gmail.com)
+- **Email**: [contact@giovanni-zanotti.is-a.dev](mailto:contact@giovanni-zanotti.is-a.dev)
 - **App Security Policy**: [github.com/ClimbStack/climbstack-app/security/policy](https://github.com/ClimbStack/climbstack-app/security/policy)
 
 Please include:
