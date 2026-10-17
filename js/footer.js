@@ -8,6 +8,7 @@
 
     /* ── social links (single source of truth) ─────────────── */
     var socials = [
+        { id: 'WEBSITE',  href: 'https://giovanni-zanotti.is-a.dev',                  icon: 'fa-globe',    label: 'Personal Website' },
         { id: 'ORCID',    href: 'https://orcid.org/0009-0000-8900-9586',            icon: 'fa-orcid',    label: 'ORCID Researcher Profile', rel: 'me noopener noreferrer' },
         { id: 'LINKEDIN', href: 'https://www.linkedin.com/in/giovanni-zanotti-it/',  icon: 'fa-linkedin', label: 'LinkedIn Profile' },
         { id: 'GITHUB',   href: 'https://github.com/GiZano',                        icon: 'fa-github',   label: 'GitHub Profile' },
@@ -37,8 +38,8 @@
                 '<div class="row align-items-center">' +
                     /* Column 1 — Brand & role */
                     '<div class="col-md-4 text-center text-md-start mb-4 mb-md-0">' +
-                        '<p class="h5 mb-1 fw-bold">Giovanni Zanotti</p>' +
-                        '<p class="text-white-50 small mb-0">Founder & Lead Developer</p>' +
+                        '<p class="h5 mb-1 fw-bold"><a href="https://giovanni-zanotti.is-a.dev" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">Giovanni Zanotti</a></p>' +
+                        '<p class="text-white-50 small mb-0">Founder &amp; Lead Developer &bull; <a href="https://giovanni-zanotti.is-a.dev" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-underline">giovanni-zanotti.is-a.dev</a></p>' +
                     '</div>' +
                     /* Column 2 — Email CTA */
                     '<div class="col-md-4 text-center mb-4 mb-md-0">' +
