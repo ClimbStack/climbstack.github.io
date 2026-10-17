@@ -8,7 +8,7 @@
 
     /* ── social links (single source of truth) ─────────────── */
     var socials = [
-        { id: 'WEBSITE',  href: 'https://giovanni-zanotti.is-a.dev',                  icon: 'fa-globe',    label: 'Personal Website' },
+        { id: 'WEBSITE',  href: 'https://giovanni-zanotti.is-a.dev',                  prefix: 'fas', icon: 'fa-globe',    label: 'Personal Website' },
         { id: 'ORCID',    href: 'https://orcid.org/0009-0000-8900-9586',            icon: 'fa-orcid',    label: 'ORCID Researcher Profile', rel: 'me noopener noreferrer' },
         { id: 'LINKEDIN', href: 'https://www.linkedin.com/in/giovanni-zanotti-it/',  icon: 'fa-linkedin', label: 'LinkedIn Profile' },
         { id: 'GITHUB',   href: 'https://github.com/GiZano',                        icon: 'fa-github',   label: 'GitHub Profile' },
@@ -23,9 +23,10 @@
         for (var i = 0; i < socials.length; i++) {
             var s = socials[i];
             var rel = s.rel || 'noopener noreferrer';
+            var prefix = s.prefix || 'fab';
             html +=
                 '<a target="_blank" href="' + s.href + '" class="text-light social-icon-footer" aria-label="' + s.label + '" rel="' + rel + '">' +
-                    '<i class="fab ' + s.icon + ' fa-lg"></i>' +
+                    '<i class="' + prefix + ' ' + s.icon + ' fa-lg"></i>' +
                 '</a>\n';
         }
         return html;
